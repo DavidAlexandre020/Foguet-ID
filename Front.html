@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Front.css">
+    <title> ROBÔ COLETOR — Limpeza Orbital Inteligente</title>
+</head>
+<body>
+    <div class="page-bg" aria-hidden="true"></div>
+
+    <header class="header" id="header">
+        <div class="container header-inner">
+            <a class="logo" href="#inicio">
+                <span class="logo-mark">
+                    <img src="img/a.png" alt="Foguete Coletor" class="logo-img">
+                </span>
+                <span class="logo-text">ROBÔ<br><strong>COLETOR</strong></span>
+            </a>
+
+            <nav class="nav" id="nav" aria-label="Principal">
+                <a href="#inicio" class="active">Início</a>
+                <a href="#sobre">Sobre</a>
+                <a href="#como-funciona">Como Funciona</a>
+                <a href="#impacto">Impacto</a>
+                <a href="#contato">Contato</a>
+            </nav>
+
+            <button class="btn btn-dark btn-sm" type="button" data-open-demo>Solicitar Demo</button>
+            <button class="nav-toggle" type="button" id="navToggle" aria-label="Abrir menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero" id="inicio">
+            <div class="container hero-grid">
+                <div class="hero-copy">
+                    <p class="kicker">Missão orbital em tempo real</p>
+                    <h1>ROBÔ COLETOR – Limpeza Orbital Inteligente</h1>
+                    <p class="lead">Detecta e recolhe lixo espacial utilizando braço robótico e drones.</p>
+                    <div class="hero-actions">
+                        <a class="btn btn-dark" href="#como-funciona">Saiba Mais</a>
+                        <button class="btn btn-outline" type="button" id="techBtn">Ver Tecnologia</button>
+                    </div>
+                    <ul class="badges">
+                        <li><span class="badge-icon shield"></span> Seguro &amp; Sustentável</li>
+                        <li><span class="badge-icon signal"></span> Monitoramento 24/7</li>
+                        <li><span class="badge-icon leaf"></span> Baixa Pegada de Carbono</li>
+                    </ul>
+                </div>
+
+                <div class="hero-art" id="heroArt">
+                    <img class="hero-photo" src="img/hero-orbita.jpg" alt="Foguete coletor com braço robótico e drones a recolher detritos em órbita">
+                    <div class="orbit-overlay" id="orbitOverlay"></div>
+                    <div class="tech-panel" id="techPanel" hidden>
+                        <strong>Tecnologia a bordo</strong>
+                        <p>Sensores de radar, braço de 6 eixos e enxame de drones mapeiam, capturam e transportam detritos sem colisão.</p>
+                        <button class="btn btn-dark btn-sm" type="button" id="closeTech">Fechar</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="how" id="como-funciona">
+            <div class="container">
+                <h2>Como Funciona</h2>
+                <p class="section-sub">Processo automatizado para limpeza orbital em três etapas simples</p>
+                <div class="cards">
+                    <article class="card reveal" data-step="1">
+                        <div class="card-photo">
+                            <img src="img/robo-deteccao.jpg" alt="Robô coletor a detetar detritos em órbita">
+                        </div>
+                        <div class="icon-wrap">
+                            <div class="css-icon radar">
+                                <span class="ring"></span>
+                                <span class="ring r2"></span>
+                                <span class="cross h"></span>
+                                <span class="cross v"></span>
+                                <span class="dot"></span>
+                            </div>
+                        </div>
+                        <h3>Deteção de Detritos</h3>
+                        <p>Sensores avançados identificam e catalogam detritos espaciais em órbita com precisão em tempo real.</p>
+                    </article>
+                    <article class="card reveal" data-step="2">
+                        <div class="card-photo">
+                            <img src="img/robo-braco.jpg" alt="Robô com braço a capturar lixo espacial">
+                        </div>
+                        <div class="icon-wrap">
+                            <div class="css-icon robot">
+                                <span class="base"></span>
+                                <span class="joint"></span>
+                                <span class="arm1"></span>
+                                <span class="arm2"></span>
+                                <span class="claw l"></span>
+                                <span class="claw r"></span>
+                            </div>
+                        </div>
+                        <h3>Captura com Braço Robótico</h3>
+                        <p>Braço robótico captura fragmentos de forma segura, reduzindo riscos de colisão orbital.</p>
+                    </article>
+                    <article class="card reveal" data-step="3">
+                        <div class="card-photo">
+                            <img src="img/drones-coletores.jpg" alt="Drones coletores de lixo no espaço">
+                        </div>
+                        <div class="icon-wrap">
+                            <div class="css-icon fleet">
+                                <span class="mini-drone top"></span>
+                                <span class="mini-drone left"></span>
+                                <span class="mini-drone right"></span>
+                            </div>
+                        </div>
+                        <h3>Drones Coletores</h3>
+                        <p>Enxame de drones recolhe detritos menores e transporta para descarte responsável.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="about" id="sobre">
+            <div class="container about-grid">
+                <div class="about-copy reveal">
+                    <p class="eyebrow">Sobre a missão</p>
+                    <h2>Robôs que limpam a órbita da Terra</h2>
+                    <p>O Foguete Coletor combina um veículo orbital, um braço robótico de precisão e uma frota de drones autónomos. Juntos identificam lixo espacial, capturam fragmentos perigosos e libertam as órbitas usadas por satélites e estações.</p>
+                    <ul class="about-list">
+                        <li>Catálogo contínuo de detritos em LEO</li>
+                        <li>Captura suave sem gerar mais fragmentos</li>
+                        <li>Transporte e descarte com baixa pegada de carbono</li>
+                    </ul>
+                </div>
+                <figure class="about-photo reveal">
+                    <img src="img/sobre-missao.jpg" alt="Nave robótica a recolher detritos sobre a Terra">
+                    <figcaption>Unidade principal em órbita baixa</figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <section class="gallery" id="frota">
+            <div class="container">
+                <h2>Robôs coletores em ação</h2>
+                <p class="section-sub">Clica numa imagem para ver o detalhe da frota</p>
+                <div class="gallery-grid">
+                    <button class="gallery-item" type="button" data-full="img/robo-deteccao.jpg">
+                        <img src="img/robo-deteccao.jpg" alt="Robô de deteção de lixo espacial">
+                        <span>Radar orbital</span>
+                    </button>
+                    <button class="gallery-item" type="button" data-full="img/robo-braco.jpg">
+                        <img src="img/robo-braco.jpg" alt="Robô de captura com braço">
+                        <span>Braço de captura</span>
+                    </button>
+                    <button class="gallery-item" type="button" data-full="img/drones-coletores.jpg">
+                        <img src="img/drones-coletores.jpg" alt="Drones coletores">
+                        <span>Enxame de drones</span>
+                    </button>
+                    <button class="gallery-item" type="button" data-full="img/logo-foguete.jpg">
+                        <img src="img/logo-foguete.jpg" alt="Foguete coletor autónomo">
+                        <span>Unidade foguete</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <section class="impact" id="impacto">
+            <div class="container">
+                <h2>Impacto</h2>
+                <p class="section-sub">Resultados simulados da primeira campanha de limpeza</p>
+                <div class="stats">
+                    <div class="stat">
+                        <strong data-count="12840">0</strong>
+                        <span>Detritos catalogados</span>
+                    </div>
+                    <div class="stat">
+                        <strong data-count="962">0</strong>
+                        <span>Capturas bem-sucedidas</span>
+                    </div>
+                    <div class="stat">
+                        <strong data-count="36">0</strong>
+                        <span>Drones ativos 24/7</span>
+                    </div>
+                    <div class="stat">
+                        <strong data-count="99">0</strong>
+                        <span>% de missões sem colisão</span>
+                    </div>
+                </div>
+                <div class="impact-row">
+                    <article class="impact-card reveal">
+                        <span class="impact-num">01</span>
+                        <h3>Órbitas mais seguras</h3>
+                        <p>Reduzimos o risco de efeito Kessler ao retirar fragmentos que ameaçam satélites e tripulação.</p>
+                    </article>
+                    <article class="impact-card reveal">
+                        <span class="impact-num">02</span>
+                        <h3>Operação sustentável</h3>
+                        <p>Trajetórias de baixo consumo e descarte responsável mantêm a pegada de carbono reduzida.</p>
+                    </article>
+                    <article class="impact-card reveal">
+                        <span class="impact-num">03</span>
+                        <h3>Dados em tempo real</h3>
+                        <p>O centro de missão acompanha cada robô, drone e detrito com monitorização contínua.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact" id="contato">
+            <div class="container">
+                <div class="contact-box">
+                    <div>
+                        <h2>Contato</h2>
+                        <p>Queres uma demonstração da frota Foguete Coletor? Deixa o teu contacto e a equipa de missão responde.</p>
+                    </div>
+                    <form class="contact-form" id="contactForm">
+                        <input type="text" name="nome" placeholder="Nome" required>
+                        <input type="email" name="email" placeholder="Email" required>
+                        <button class="btn btn-dark" type="submit">Enviar pedido</button>
+                        <p class="form-msg" id="formMsg" hidden>Pedido enviado. A missão entra em contacto em breve.</p>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        © 2024 FOGUETE COLETOR · Sustentabilidade Orbital · contato@foguete-coletor.space
+    </footer>
+
+    <div class="modal" id="demoModal" hidden>
+        <div class="modal-card">
+            <h3>Solicitar Demo</h3>
+            <p>Simula o voo de um robô coletor na tua órbita de interesse.</p>
+            <form id="demoForm">
+                <input type="text" name="org" placeholder="Organização" required>
+                <input type="email" name="email" placeholder="Email profissional" required>
+                <a href="#Demo.html"><button class="btn btn-dark" type="submit">Agendar</button></a>
+            </form>
+            <button class="modal-close" type="button" data-close-demo>Fechar</button>
+        </div>
+    </div>
+
+    <div class="lightbox" id="lightbox" hidden>
+        <img alt="">
+        <button type="button" id="closeLightbox">Fechar</button>
+    </div>
+
+    <script src="Front.js"></script>
+</body>
+</html>

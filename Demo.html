@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo ID</title>
+</head>
+<body>
+    <div id="app">
+<canvas id="c" aria-label="Simulador de recolha de lixo espacial"></canvas>
+<div id="hint">Clica ou toca num detrito para o capturar.</div>
+<div id="hud">
+  <div class="stats">
+    <div><b id="sC">0</b><span>recolhidos</span></div>
+    <div><b id="sO">14</b><span>em órbita</span></div>
+    <div><b id="sM">0</b><span>kg removidos</span></div>
+  </div>
+  <div id="st">A iniciar…</div>
+  <div class="ctl">
+    <button id="bP">Pausar</button>
+    <button id="bM">Modo automático</button>
+    <label>Velocidade <input type="range" id="sp" min=".5" max="3" step=".25" value="1"></label>
+    <button id="bR">Reiniciar</button>
+  </div>
+</div>
+</div>
+<script src="Demo.js"></script>
+</body>
+</html>
